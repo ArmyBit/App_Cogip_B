@@ -12,7 +12,7 @@ public class UserController  {
     @GetMapping("/")
     public String index() {
         if(userService.getUser(0).isEmpty()){
-            return "User not found";
+            return "User not found // false id";
         }
         else {
             return userService.getUser(0).get().getUsername();
